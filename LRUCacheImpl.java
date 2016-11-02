@@ -94,7 +94,6 @@ public class LRUCacheImpl<K, V> implements LRUCache<K, V> {
             theNode.next.prev = theNode.prev;
             theNode.prev.next = theNode.next;
         }
-
     }
 
     public void moveToHead(K key) {
@@ -123,7 +122,6 @@ public class LRUCacheImpl<K, V> implements LRUCache<K, V> {
         }
         if (end == null)
             end = head;
-
     }
 
     /**
@@ -154,6 +152,5 @@ public class LRUCacheImpl<K, V> implements LRUCache<K, V> {
         for (int i = 0; i < 10; i++) {
             System.out.print(stringIntegerLRUCache.get(strings[i]) + " ");
         }
-
     }
 }
